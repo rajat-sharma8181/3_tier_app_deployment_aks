@@ -13,4 +13,8 @@ resource "azurerm_kubernetes_cluster" "aks" {
     vm_size    = default_node_pool.value.vm_size
     } 
   }
+
+  identity {
+    type = each.value.identity.type
+  }
 }

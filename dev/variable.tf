@@ -19,7 +19,7 @@ variable "rg_dev" {
 # }
 
 variable "acr_dev" {
-    type = map(object({
+  type = map(object({
     name                = string
     resource_group_name = string
     location            = string
@@ -29,7 +29,7 @@ variable "acr_dev" {
 }
 
 variable "aks_cluster_dev" {
-    type = map(object({
+  type = map(object({
     name                = string
     location            = string
     resource_group_name = string
@@ -39,6 +39,9 @@ variable "aks_cluster_dev" {
       node_count = number
       vm_size    = string
     }))
+    identity = object({
+      type = string
+    })
   }))
 }
 

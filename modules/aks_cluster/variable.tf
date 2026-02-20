@@ -9,5 +9,8 @@ variable "aks_cluster" {
       node_count = number
       vm_size    = string
     }))
+    identity = object({
+      type = string
+    })
   }))
 }
