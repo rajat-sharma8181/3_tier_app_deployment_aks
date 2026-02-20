@@ -42,23 +42,23 @@ variable "aks_cluster_dev" {
   }))
 }
 
-variable "mssql_server_dev" {
-    type = map(object({
-    name                         = string
-    resource_group_name          = string
-    location                     = string
-    administrator_login          = string
-    administrator_login_password = string
-  }))
-}
+# variable "mssql_server_dev" {
+#     type = map(object({
+#     name                         = string
+#     resource_group_name          = string
+#     location                     = string
+#     administrator_login          = string
+#     administrator_login_password = string
+#   }))
+# }
 
-variable "mssql_db_dev" {
-    type = map(object({
-    name         = string
-    collation    = optional(string)
-    license_type = optional(string)
-    max_size_gb  = optional(number)
-    sku_name     = optional(string)
-    enclave_type = optional(string)
-  }))
-}
+# variable "mssql_db_dev" {
+#     type = map(object({
+#     name         = string
+#     collation    = optional(string)
+#     license_type = optional(string)
+#     max_size_gb  = optional(number)
+#     sku_name     = optional(string)
+#     enclave_type = optional(string)
+#   }))
+# }
