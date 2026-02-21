@@ -24,6 +24,7 @@ module "aks_mod" {
 # }
 
 module "aks_acr_pull_mod" {
+  depends_on = [ module.acr_mod, module.aks_mod ]
   source = "../modules/aks_acr_role"
   aks_acr_pull = var.aks_acr_pull_dev
 }
