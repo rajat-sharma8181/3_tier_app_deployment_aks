@@ -35,7 +35,7 @@ aks_cluster_dev = {
 }
 
 aks_acr_pull_dev = {
-  acr_pull = {
+  acr_pull_1 = {
     role_definition_name = "AcrPull"
     aks_name = "nitoAksPoc1"
     acr_name = "nitorAcrPoc1"
