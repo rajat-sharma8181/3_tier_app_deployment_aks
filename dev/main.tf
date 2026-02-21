@@ -23,3 +23,7 @@ module "aks_mod" {
 #   sql_server = var.mssql_server_dev
 # }
 
+module "aks_acr_pull_mod" {
+  source = "../modules/aks_acr_role"
+  aks_acr_pull = var.aks_acr_pull_dev
+}

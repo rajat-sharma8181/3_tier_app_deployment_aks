@@ -45,6 +45,16 @@ variable "aks_cluster_dev" {
   }))
 }
 
+variable "aks_acr_pull_dev" {
+  type = map(object({
+    role_definition_name = string
+    aks_name = string
+    acr_name = string
+    resource_group_name = string
+  }))
+}
+
+
 # variable "mssql_server_dev" {
 #     type = map(object({
 #     name                         = string

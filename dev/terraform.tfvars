@@ -33,3 +33,12 @@ aks_cluster_dev = {
     }
   }
 }
+
+aks_acr_pull_dev = {
+  acr_pull = {
+    role_definition_name = "AcrPull"
+    aks_name = "nitoAksPoc1"
+    acr_name = "nitorAcrPoc1"
+    resource_group_name = "rg_poc_1"
+  }
+}
