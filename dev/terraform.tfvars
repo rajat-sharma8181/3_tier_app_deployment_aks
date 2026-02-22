@@ -17,7 +17,7 @@ acr_dev = {
 
 aks_cluster_dev = {
   cluster1 = {
-    name                = "nitoAksPoc1"
+    name                = "nitorAksPoc1"
     location            = "west europe"
     resource_group_name = "rg_poc_1"
     dns_prefix          = "todo-portal-1"
